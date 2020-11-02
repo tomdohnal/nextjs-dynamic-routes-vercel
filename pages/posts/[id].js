@@ -20,6 +20,7 @@ function Post() {
 
   console.log("-------------------------------------------------");
   console.log(router.query.id);
+  console.log(router.isFallback);
   console.log("-------------------------------------------------");
 
   const blogPostNumber = router.query.id ? Number(router.query.id) + 10 : "";
